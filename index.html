@@ -33,11 +33,8 @@
         var input_text = ta_Input.value;
 
         // process.
-        // var output_text = input_text.replace('.', ".\n\n")
-        // var output_text = input_text.replace(/./g, ".\n\n")
         var output_text = input_text.replaceAll(".", ".\n\n")
         var output_text = output_text.replaceAll("\n\n\n", "\n\n")
-        // "."
 
         // output.
         ta_Output.value = output_text;
