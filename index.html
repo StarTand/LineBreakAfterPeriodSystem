@@ -34,6 +34,8 @@
 
         // process.
         var output_text = input_text.replaceAll(".", ".\n\n")
+        var output_text = output_text.replaceAll("?", "?\n\n")
+        var output_text = output_text.replaceAll("!", "!\n\n")
         var output_text = output_text.replaceAll("\n\n\n", "\n\n")
 
         // output.
