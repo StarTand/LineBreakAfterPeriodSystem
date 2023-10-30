@@ -33,8 +33,11 @@
         var output_text = output_text.replaceAll("?", "?\n\n")
         var output_text = output_text.replaceAll("!", "!\n\n")
         var output_text = output_text.replaceAll("\n\n \n\n", "\n\n")
+
+        var output_text = output_text.replaceAll("\n\n\n\n\n\n", "\n\n")
+        var output_text = output_text.replaceAll("\n\n\n\n\n", "\n\n")
+        var output_text = output_text.replaceAll("\n\n\n\n", "\n\n")
         var output_text = output_text.replaceAll("\n\n\n", "\n\n")
-        // var output_text = output_text.replaceAll("\n\n\n\n", "\n\n")
 
         // output.
         ta_Output.value = output_text;
