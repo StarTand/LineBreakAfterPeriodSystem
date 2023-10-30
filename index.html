@@ -11,18 +11,14 @@
   <body>
     <main>
         <h1>Line break after period System.</h1>  
-        DeepLで長文を翻訳したいときに使用する
+        DeepLで長文を翻訳したいときに使用する。".", "?", "!"で文章を改行する。
     </main>
     
-    <textarea id="TA_Input" name="w3review" rows="12" cols="50"  onkeyup="AdjustSentence()">
-
-    </textarea>
+    <textarea id="TA_Input" name="w3review" rows="12" cols="50"  onkeyup="AdjustSentence()"></textarea>
 
     <br>
-    
-    <textarea id="TA_Output" name="w3review" rows="12" cols="50">
-
-    </textarea>
+    <div>output</div>
+    <textarea id="TA_Output" name="w3review" rows="12" cols="50"></textarea>
 
 	  <!-- <script src="index.js"></script> -->
     <script>
@@ -36,7 +32,9 @@
         var output_text = input_text.replaceAll(".", ".\n\n")
         var output_text = output_text.replaceAll("?", "?\n\n")
         var output_text = output_text.replaceAll("!", "!\n\n")
+        var output_text = output_text.replaceAll("\n\n \n\n", "\n\n")
         var output_text = output_text.replaceAll("\n\n\n", "\n\n")
+        // var output_text = output_text.replaceAll("\n\n\n\n", "\n\n")
 
         // output.
         ta_Output.value = output_text;
